@@ -10,29 +10,16 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 from decouple import config
-<<<<<<< HEAD
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 #FIXTURE_DIRS = [
 #      os.path.join(BASE_DIR, 'fixtures'),
-=======
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-#FIXTURE_DIRS = [
-#    os.path.join(BASE_DIR, 'fixtures'),
->>>>>>> 8a9653d107e5fbd1087118588d908b2d38c64521
 #]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-<<<<<<< HEAD
-=======
-
->>>>>>> 8a9653d107e5fbd1087118588d908b2d38c64521
 SECRET_KEY = config("TEST_SECRET_KEY", default='')
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -44,10 +31,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-<<<<<<< HEAD
-=======
-    'health_check',   
->>>>>>> 8a9653d107e5fbd1087118588d908b2d38c64521
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -92,10 +75,6 @@ WSGI_APPLICATION = 'hackernews.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-<<<<<<< HEAD
-
-=======
->>>>>>> 8a9653d107e5fbd1087118588d908b2d38c64521
 TEST_DATABASE = config("TEST_DATABASE", default='')
 TEST_USER = config("TEST_USER", default='')
 TEST_PASSWORD = config("TEST_PASSWORD", default='')
