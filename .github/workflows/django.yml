@@ -1,7 +1,6 @@
 name: Django CI/CD
 
 # Controls when the action will run. 
-#
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
@@ -52,9 +51,10 @@ jobs:
       uses: fifsky/ssh-action@master
       with:
         command: |
-          cd /home/${{ secrets.USERNAME }}
+          cd /home/${{ secrets.USERNAME }}/hackernews
+
           pwd
-          ls
+          git pull origin release
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USERNAME }}
         key: ${{ secrets.PRIVATE_KEY}}
