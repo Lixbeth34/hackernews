@@ -52,10 +52,11 @@ jobs:
       uses: fifsky/ssh-action@master
       with:
         command: |
-          cd /home/${{ secrets.USERNAME }}/hackernews
+          cd /home/${{ secrets.USERNAME }}
 
           pwd
-          git pull origin release
+          #git pull origin release
+          ls
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USERNAME }}
         key: ${{ secrets.PRIVATE_KEY}}
